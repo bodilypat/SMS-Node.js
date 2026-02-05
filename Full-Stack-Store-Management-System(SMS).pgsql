@@ -1,66 +1,67 @@
 Full-Stack-Store-Management-System(SMS)
 │   
 ├── backend(SMS Node.js)
-│   ├── app/
-│   │   ├── __init__.py                          
-│   │   ├── main.py
+│   ├── src/
 │   │   ├── config/                       
-│   │   │   ├── db.py
-│   │   │   ├── setting.py
-│   │   │   └── __init__.py
+│   │   │   ├── db.js
+│   │   │   ├── env.js
+│   │   │   └── index.js
 │   │   ├── models/                          
-│   │   │   ├── user.py
-│   │   │   ├── product.py
-│   │   │   ├── category.py
-│   │   │   ├── order.py
-│   │   │   ├── customer.py
-│   │   │   └── supplier.py
-│   │   ├── schemas/                          
-│   │   │   ├── auth_schema.py
-│   │   │   ├── product_schema.py
-│   │   │   ├── category_schema.py
-│   │   │   ├── order_schema.py
-│   │   │   ├── customer_schema.py
-│   │   │   └── supplier_schema.py
+│   │   │   ├── user.model.js
+│   │   │   ├── product.model.js
+│   │   │   ├── category.model.js
+│   │   │   ├── Order.model.js
+│   │   │   ├── Customer.model.js
+│   │   │   ├── Supplier.model.js
+│   │   │   └── InventoryLog.model.js
 │   │   ├── controllers/                          
-│   │   │   ├── auth_controller.py
-│   │   │   ├── product_controller.py
-│   │   │   ├── category_controller.py
-│   │   │   ├── order_controller.py
-│   │   │   ├── customer_controller.py
-│   │   │   └── supplier_controller.py
-│   │   ├── routes/                          
-│   │   │   ├── auth_routes.py
-│   │   │   ├── product_routes.py
-│   │   │   ├── category_routes.py
-│   │   │   ├── order_route.py
-│   │   │   ├── customer_route.py
-│   │   │   └── supplier_route.py
+│   │   │   ├── auth.controller.js
+│   │   │   ├── product.controller.js
+│   │   │   ├── categorycontroller.js
+│   │   │   ├── order.controller.js
+│   │   │   ├── customer.controller.js
+│   │   │   └── supplier.controller.js
 │   │   ├── services/                          
-│   │   │   ├── auth_service.py
-│   │   │   ├── product_service.py
-│   │   │   ├── category_service.py
-│   │   │   ├── order_service.py
-│   │   │   ├── customer_service.py
-│   │   │   └── supplier_service.py
+│   │   │   ├── auth.service.js
+│   │   │   ├── product.service.js
+│   │   │   ├── inventory.service.js
+│   │   │   ├── order.service.js
+│   │   │   ├── customer.service.js
+│   │   │   └── supplier.service.js
+│   │   ├── routes/                          
+│   │   │   ├── auth.routes.js
+│   │   │   ├── product.routes.js
+│   │   │   ├── category.routes.js
+│   │   │   ├── order.routes.js
+│   │   │   ├── customer.routes.js
+│   │   │   ├── supplier.routes.js
+│   │   │   └── index.js
 │   │   ├── middlewares/                          
-│   │   │   ├── auth_middleware.py
-│   │   │   └── error_middleware.py
+│   │   │   ├── auth.middleware.js
+│   │   │   ├── role.middleware.js
+│   │   │   ├── error.middleware.js
+│   │   │   └── validate.middleware.js
+│   │   ├── validations/                          
+│   │   │   ├── auth.validation.js
+│   │   │   ├── product.validation.js
+│   │   │   ├── order.validation.js
+│   │   │   └── validate.validation.js
 │   │   ├── utils/                          
-│   │   │   ├── helpers.py
-│   │   │   ├── validators.py
-│   │   │   └── response.py
+│   │   │   ├── response.js
+│   │   │   ├── logger.js
+│   │   │   ├── hash.js
+│   │   │   └── constants.js
 │   │   ├── providers/                          
-│   │   │   ├── email_provider.py
-│   │   │   ├── payment_provider.py
-│   │   │   └── sms_provider.py
-│   │   ├── tests/                          
-│   │   │   ├── test_auth.py
-│   │   │   ├── test_product.py
-│   │   │   └── test_order.js
+│   │   │   ├── email.provider.js
+│   │   │   ├── sms.provider.js
+│   │   │   └── payment.provider.js
 │   │   ├── app.js                          
 │   │   └── server.js 
-│	├── requirements.txt
+│	├── tests/
+│   │   ├── auth.test.js
+│   │   ├── product.test.js
+│   │   └── order.test.js
+│	├── package.json
 │	├── .env
 │	├── .gitignore
 │   └── README.md 

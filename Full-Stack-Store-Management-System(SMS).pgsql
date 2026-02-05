@@ -83,19 +83,35 @@ Full-Stack-Store-Management-System(SMS)
 │   │	│   ├── common/
 │   │   │   │   ├── Button/
 │   │   │   │   │   ├── Button.jsx
-│   │   │   │	│   └── button.module.jsx
+│   │   │   │	│   └── Button.module.css
 │   │   │   │   ├── Input/
 │   │   │   │   │   ├── Input.jsx
-│   │   │   │	│   └── Input.module.jsx
-│   │   │   │   ├── Modal.jsx
-│   │   │   │   ├── Table.jsx
+│   │   │   │	│   └── Input.module.css
+│   │   │   │   ├── Modal/
+│   │   │   │   │   ├── Modal.jsx
+│   │   │   │	│   └── Modal.module.css
+│   │   │   │   ├── Table/
+│   │   │   │   │   ├── Table.jsx
+│   │   │   │	│   └── Table.module.css
 │   │   │   │   ├── Card.jsx
+│   │   │   │   │   ├── Card.jsx
+│   │   │   │	│   └── Card.module.css
 │   │   │   │	└── Loader.jsx
+│   │   │   │       ├── Loader.jsx
+│   │   │   │	    └── Loader.module.css
 │   │	│   ├── layout/
-│   │   │   │   ├── Navbar.jsx
-│   │   │   │   ├── Sidebar.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │	└── Breadcrumb.jsx
+│   │   │   │   ├── Navbar/
+│   │   │   │   │   ├── Navbar.jsx
+│   │   │   │	│   └── Navbar.module.css
+│   │   │   │   ├── Sidebar/
+│   │   │   │   │   ├── Sidebar.jsx
+│   │   │   │	│   └── Siderbar.module.css
+│   │   │   │   ├── Footer/
+│   │   │   │   │   ├── Footer.jsx
+│   │   │   │	│   └── Footer.module.css
+│   │   │   │	└── Breadcrumb/
+│   │   │   │       ├── Breadcrump.jsx
+│   │   │   │	    └── Breadcrump.module.css
 │   │	│   └── protected/
 │   │   │       ├── ProtectedRoute.jsx
 │   │   │   	└── RoleBaseRoute.jsx
@@ -106,8 +122,10 @@ Full-Stack-Store-Management-System(SMS)
 │   │   │   │   │   ├── Login.jsx
 │   │   │   │   │   ├── Register.jsx
 │   │   │   │	│   └── ForgotPassword.jsx
-│   │   │   │   ├── authSlice.js
-│   │   │   │	└── auth.api.js
+│   │   │   │   ├── auth.api.js
+│   │   │   │   ├── auth.slice.js
+│   │   │   │   ├── auth.utils.js 
+│   │   │   │	└── index.js
 │   │	│   ├── dashboard/
 │   │   │   │   ├── Dashboard.jsx
 │   │   │   │	└── widgets/
@@ -120,7 +138,9 @@ Full-Stack-Store-Management-System(SMS)
 │   │   │   │	│   └── EditProduct.jsx
 │   │   │   │   ├── components/
 │   │   │   │	│   └── ProductForm.jsx
-│   │   │   │	└── product.api.js
+│   │   │   │   ├── product.api.js
+│   │   │   │   ├── product.utils.js
+│   │   │   │	└── index.js 
 │   │	│   ├── inventory/
 │   │   │   │   ├── pages/
 │   │   │   │   │   ├── InventoryDashboard.jsx                  # Overview + stock levels
@@ -140,7 +160,9 @@ Full-Stack-Store-Management-System(SMS)
 │   │   │   │   ├── components
 │   │   │   │   │   ├── Cart.jsx
 │   │   │   │	│   └── PaymentModal.jsx
-│   │   │   │	└── sales.api.js
+│   │   │   │   ├── sales.api.js
+│   │   │   │   ├── sales.utils.js
+│   │   │   │	└── index.js
 │   │	│   ├── customers/
 │   │   │   │   ├── pages/
 │   │   │   │   │   ├── CustomerList.jsx
@@ -163,7 +185,7 @@ Full-Stack-Store-Management-System(SMS)
 │   │   │   	└── SupplierReport.jsx
 │   │   ├── context/
 │   │	│   ├── AuthContext.jsx                                                         
-│   │	│   ├── inventoryContext.js                            # Context inventory State   
+│   │	│   ├── InventoryContext.js                            # Context inventory State   
 │   │	│   ├── NotificationContext.jsx                            
 │   │   │   └── index.js    
 │   │   ├── services/                                          # API call
@@ -173,7 +195,7 @@ Full-Stack-Store-Management-System(SMS)
 │   │	│   ├── saleService.js                         
 │   │	│   ├── customerService.js
 │   │	│   ├── supplierService.js
-│   │	│   ├── staffService.js   
+│   │	│   ├── reportService.js   
 │   │   │   └── index.js                                       # Optional , export all service
 │   │   ├── hooks/
 │   │	│   ├── useAuth.js                                
